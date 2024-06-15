@@ -121,6 +121,8 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+#template notebook
+retrieve_movie_data.ipynb
 # Environments
 .env
 .venv
