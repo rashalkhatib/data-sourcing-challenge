@@ -20,7 +20,7 @@ This project involves preparing data for a movie recommendation system. The goal
     
 - Part 2: Access The Movie Database API:
   * Create an empty list called tmdb_movies_list to store the results from your API requests. This will contain a list of dictionaries.
-  * Create a variable called request_counter and initialize it with the value of 1. This counter should do the following:
+  * Create a variable called request_counter and initialize it with the value of 1. This counter will do the following:
   * Increment by one every time you iterate through the titles list.
   * Use time.sleep(1) when it reaches a multiple of 50.
   * Print a message to indicate that the application is sleeping.
@@ -29,11 +29,11 @@ This project involves preparing data for a movie recommendation system. The goal
   * Perform a GET request that sends the title to The Movie Database search and retrieves the JSON results.
   * Use a try clause that performs the following actions:
   * Collect the movie ID from the first result.
-  * Make a GET request using the movie query (starting with https://api.themoviedb.org/3/movie/) and movie ID to retrieve the full movie details in JSON format.
+  * Make a GET request using the movie query and movie ID to retrieve the full movie details in JSON format.
   * Extract the genre names from the results into a list called genres.
   * Extract the spoken_languages' English name from the results into a list called spoken_languages.
   * Extract the production_countries' name from the results into a list called production_countries.
-  * Create a dictionary with the following results: title, original_title, budget, original_language, homepage, overview, popularity, runtime, revenue, release_date, vote_average, vote_count, as well as the genres, spoken_languages, and production_countries lists you just created.Append this dictionary to tmdb_movies_list.
+  * Create a dictionary with the following results: title, original_title, budget, original_language, homepage, overview, popularity, runtime, revenue, release_date, vote_average, vote_count, as well as the genres, spoken_languages, and production_countries lists you just created, and append this dictionary to tmdb_movies_list.
   * Print out the name of the movie and a message to indicate that the title was found.
   * Use the except clause to print out a statement if a movie is not found.
   * Preview the first five results in JSON format using json.dumps with the argument indent=4 to format the data.
